@@ -1,0 +1,136 @@
+[ 20.01.24 - 15:33:15 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 20.01.24 - 15:32:26 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 20.01.24 - 15:31:29 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 20.01.24 - 15:29:26 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 20.01.24 - 15:27:44 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 20.01.24 - 15:7:6 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 20.01.24 - 9:4:22 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 20.01.24 - 8:43:55 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 19.01.24 - 20:10:5 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 19.01.24 - 20:6:47 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 19.01.24 - 20:3:33 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 19.01.24 - 17:12:33 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 19.01.24 - 17:6:24 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 19.01.24 - 17:3:29 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 19.01.24 - 16:56:25 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 19.01.24 - 16:47:56 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 19.01.24 - 16:42:16 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 19.01.24 - 16:21:4 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 19.01.24 - 15:9:52 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 19.01.24 - 11:19:46 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 19.01.24 - 10:22:33 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 19.01.24 - 9:56:2 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 19.01.24 - 9:52:26 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 11.01.24 - 7:55:19 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 11.01.24 - 7:53:48 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 04.01.24 - 7:50:23 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 02.01.24 - 5:50:39 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 02.01.24 - 5:31:18 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 01.01.24 - 10:37:24 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 01.01.24 - 9:8:11 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 01.01.24 - 9:5:21 ] [ LAScripts_toolbar ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 01.01.24 - 9:5:5 ] [ LAScripts ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 22.02.22 - 14:6:43 ] [ LAScripts ] [ version: 1.1.0 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+varialbles.js => featured.checkVersion() - error: TypeError: Cannot read property 'replace' of undefined
+TypeError: Cannot read property 'replace' of undefined
+    at Object.checkVersion (file:///C:/Program%20Files/Common%20Files/Adobe/CEP/extensions/lascript/assets/js/app.js:1:308394)
+    at Object.message (file:///C:/Program%20Files/Common%20Files/Adobe/CEP/extensions/lascript/assets/js/app.js:1:308083)
+    at file:///C:/Program%20Files/Common%20Files/Adobe/CEP/extensions/lascript/assets/js/app.js:1:407180
+
+
