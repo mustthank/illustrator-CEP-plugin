@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<ExtensionManifest Version="5.0" ExtensionBundleId="Griddder" ExtensionBundleName="Griddder" ExtensionBundleVersion="1.0.7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Author><![CDATA[Alexander Ladygin]]></Author>
+    <Legal><![CDATA[Rights to the Program.
+    
+    The exclusive right on the Program belongs to the Owner.
+    
+    
+    1. User"s rights
+    
+        1.1. Program. The owner grants to the User the nonexclusive non-transferable right (the simple license) to use the Program for a direct functional purpose for the purpose of what to make its copying and installation on the personal computer(s) or the User"s server(s). The user has the right to make installation of the Program on unrestricted number of personal computers.
+        1.2. Restrictions. Except as specified, directly provided by this License or the current legislation the User has no right to perform and/or resolve implementation concerning the Program of the following actions:
+            - conversion or modification;
+            - change, decompiling, disassembling, decoding and other actions with an object code of the Program aiming at violation of system of protection of the Program against unauthorized use and receipt of information on implementation of the algorithms used in the Program and also creation of derivative works without written consent of the Owner;
+            - removal of any copyright notices;
+            - other use of the Program which is directly not provided by this License.
+    
+    
+    2. Conditions of use of the Program
+    
+        2.1. The program has to be used under the name: Griddder. The user has no right to change the name of the Program, to change and/or delete a sign of protection of copyright or other instruction on the Owner.
+    
+    
+    3. Responsibility and guarantees according to the license
+    
+        3.1. The program is provided on conditions "as is" (as is). The owner does not provide any guarantees concerning faultless and smooth operation of the Program, compliance of the Program to specific purposes of the User, to market level, and also does not provide any other guarantees which are directly not specified in this License.
+        3.2. In the maximum degree, admissible the current legislation, the Owner does not bear any responsibility for any straight lines or indirect consequences of any use or non-use of the Program and/or the damage caused to the User and/or the third parties as a result of any use or non-use of the Program including because of possible errors or failures in work of the Program.
+        3.4. Without prejudice to any other rights, the Owner has the right to terminate this License if the User does not comply with the License condition. In that case the User is obliged to uninstall and destroy all copies of the Program which are available for him.
+    ]]></Legal>
+    <Contact mailto="alexander@ladygin.pro"/>
+    <Abstract><![CDATA[Conveniently work with scenarios and your working files. Fast and convenient start of scenarios, running of files in a click, movement of files by drag and drop, the built-in editor of "ACE", etc.
+
+After installation, navigate to Windows -> Extensions -> Griddder.
+
+    <a href="http://ladygin.pro/development/design/griddder" style="color: #fff">http://ladygin.pro/development/design/griddder (is in development)</a>
+    <a href="mailto:i@ladygin.pro" style="color: #fff">Feedback Email: i@ladygin.pro</a>]]></Abstract>
+    <ExtensionList>
+        <Extension Id="Griddder" Version="1.0.7"/>
+    </ExtensionList>
+    <ExecutionEnvironment>
+        <HostList>
+            <Host Name="ILST" Version="[18.0,99.9]"/>
+        </HostList>
+        <LocaleList>
+            <Locale Code="All"/>
+        </LocaleList>
+        <RequiredRuntimeList>
+            <RequiredRuntime Name="CSXS" Version="5.0"/>
+        </RequiredRuntimeList>
+    </ExecutionEnvironment>
+    <DispatchInfoList>
+        <Extension Id="Griddder">
+            <DispatchInfo>
+                <Resources>
+                    <MainPath>./index.html</MainPath>
+                    <ScriptPath>./scripts/main.jsx</ScriptPath>
+                    <CEFCommandLine>
+                        <Parameter>--mixed-context</Parameter>
+                        <Parameter>--enable-nodejs</Parameter>
+                    </CEFCommandLine>
+                </Resources>
+                <Lifecycle>
+                    <AutoVisible>true</AutoVisible>
+                </Lifecycle>
+                <UI>
+                    <Menu>Griddder</Menu>
+                    <Type>Panel</Type>
+                    <Geometry>
+                        <Size>
+                            <Width>320</Width>
+                            <Height>415</Height>
+                        </Size>
+                        <MinSize>
+                            <Width>320</Width>
+                            <Height>415</Height>
+                        </MinSize>
+                        <MaxSize>
+                            <Width>320</Width>
+                            <Height>3000</Height>
+                        </MaxSize>
+                    </Geometry>
+                    <Icons>
+                        <Icon Type="Normal">./assets/icons/iconNormal.png</Icon>
+                        <Icon Type="RollOver">./assets/icons/iconRollover.png</Icon>
+                        <Icon Type="Disabled">./assets/icons/iconDisabled.png</Icon>
+                        <Icon Type="DarkNormal">./assets/icons/iconDarkNormal.png</Icon>
+                        <Icon Type="DarkRollOver">./assets/icons/iconDarkRollover.png</Icon>
+                    </Icons>
+                </UI>
+            </DispatchInfo>
+        </Extension>
+    </DispatchInfoList>
+</ExtensionManifest>

@@ -1,0 +1,86 @@
+<div style="font-size: 110%;">
+    <div class="note">
+        <h4 class="text_normal" style="margin: 0;">Fixed bugs and added new features:</h4>
+        <ul class="list" style="margin: 0;">
+            <li>Added new extension LAScripts Toolbar</li>
+            <li>Added events for scripts in startup</li>
+            <ul class="list list_padding list_radio_selected">
+                <li>beforeOnLoadExtension</li>
+                <li>onLoadExtension</li>
+                <li>documentAfterSave</li>
+                <li>applicationActivate</li>
+                <li>documentAfterActivate</li>
+                <li>documentAfterDeactivate</li>
+            </ul>
+            <li>New library for extend script - "AI_PS_Library"</li>
+            <li>Open folder only Application - Open context menu on the main folder's and select "In App"</li>
+            <li>Added new scripts</li>
+            <ul class="list list_padding list_radio_selected">
+                <li>Bootstrap grid - fixed bug (work in PS, AI, same syntax)</li>
+                <li>Susy 2 grid - fixed bug (work in PS, AI, same syntax)</li>
+                <li>Documents close other</li>
+                <li>...</li>
+            </ul>
+        </ul>
+    </div>
+    <br>
+    <div class="note note_alarm">Please enable the library "AI_PS_Library" - without it, some scripts (default buttons in LAScripts Toolbar) may not work...</div>
+    <br>
+    <div class="note note_alarm">LAScripts Toolbar - All the scripts for buttons are in the v1.0.7 folder in the working folder of the LAScripts extension</div>
+    <br>
+    <h4 class="text_normal">Create custom section:</h4>
+    <pre><code class="language-javascript">
+### Example
+
+    // --lascripts-extension-engine-start
+
+
+        // add this file to startup and add an event - "beforeOnLoadExtension"
+
+        new $sections.addSection({
+            name: 'customSection', // name - find to $sections[.name], example: $sections.customSection.node = [jQuery object]
+            selector: '.customSection', // selector (for HMTL DOM)
+            html: '', // html code
+            tools: { // tools in the toolbar
+                count: 6, // number of tools in the toolbar of the section 
+                name: [ // names of tools in the toolbar of the section
+                    'back',
+                    'run',
+                    'undo',
+                    'redo',
+                    'bootstrap'
+                ]
+            }
+        }, function (section, self) {
+
+            // body section
+                section.append('< div id="myCustomButton" class="button button_full-width" style="text-align: center">Button created< /div>');
+                section.on('click', '#myCustomButton', function (e) {
+                    alert('myCustomButton');
+                    $console.log('myCustomButton');
+                });
+
+        });
+
+
+    // --lascripts-extension-engine-end
+
+### End example
+    </code></pre>
+    <h4 class="text_normal">Activate section</h4>
+    <pre><code class="language-javascript">
+### Example
+
+    // --lascripts-extension-engine-start
+
+        // $sections - global variable
+        // customSection - the name your section
+        // selector - the selector your section
+
+        setActiveSection( $sections.customSection.selector );
+
+    // --lascripts-extension-engine-end
+
+### End example
+    </code></pre>
+</div>

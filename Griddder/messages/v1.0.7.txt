@@ -1,0 +1,5 @@
+<div style="font-size: 110%;">
+    <div class="note">
+        <h4 class="text_normal" style="margin: 0;">Fixed bugs</h4>
+    </div>
+</div>

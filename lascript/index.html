@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>LAScripts</title>
+    <meta http-equiv="Pragma" content="no-cache" />
+    <link rel="stylesheet" type="text/css" href="assets/css/app.css"/>
+</head>
+<body>
+    <div class="appMode appMode_mode_folder" title="Open extension - LAScripts Toolbar"></div>
+
+    <div class="select-path">
+        <input type="text" tabindex="-1" placeholder="Enter the folder path" title="Enter the folder path" data-path-title="Enter the folder path" data-name-title="Enter the file name" data-path="" data-name="" data-edit-file-path="" data-edit-file-name="">
+        <div class="button">Choose</div>
+    </div>
+
+    <div class="sections">
+
+        <div class="folder-wrapper" data-view="tree"></div>
+
+        <div class="editor-wrapper">
+            <div id="Editor"></div>
+        </div>
+
+        <div class="favorites-wrapper" data-view="list">
+            <ul class="folder opened">
+                <div class="folder__info">
+                    <i class="folder__explorer" title="~/Desktop"></i>
+                    <div class="folder__toggle"></div>
+                    <span></span>
+                </div>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <div class="toolbar" data-offset="0">
+        <div class="tool tool_default back disabled" title="To back"></div>
+        <div class="tool tool_default finder" title="Finder
+--- RIGHT Mouse Button: 'reset value'"></div>
+        <div class="tool tool_default finderExit disabled" title="Close finder"></div>
+        <div class="tool tool_default font-size disabled" title="Font-size: LEFT Mouse Button: '+',
+--- RIGHT Mouse Button: '-'
+--- SHIFT L/R Mouse Button: 'reset'"></div>
+        <div class="tool tool_default undo disabled" title="Undo"></div>
+        <div class="tool tool_default redo disabled" title="Redo"></div>
+        <div class="tool tool_default view-tree disabled" title="View tree"></div>
+        <div class="tool tool_default view-list" title="View list"></div>
+        <div class="tool tool_default run" title="Run script"></div>
+        <div class="tool tool_default editor" title="Editor"></div>
+        <div class="tool tool_default libraries" title="Libraries & Startup files"></div>
+        <div class="tool tool_default favorites" title="Favorites"></div>
+        <div class="tool tool_default save disabled" title="LEFT Mouse Button: Save,
+--- RIGHT Mouse Button: Save As"></div>
+        <input type="text" id="finder" class="disabled" data-title-folder="Search in the name" data-title-favorites="Search in the name" data-title-editor="Search in the keyword">
+        <div class="tool tool_default find-prev disabled" title="Search prev"></div>
+        <div class="tool tool_default find-next disabled" title="Search next"></div>
+        <div class="tool tool_default case-sensitive disabled" title="Case sensitive"></div>
+        <div class="tool tool_default whole-word disabled" title="Whole word"></div>
+        <div class="tool tool_default hot-keys disabled" title="Hot Keys"></div>
+        <span class="toolbar__button collapse" title="Toolbar collapse or expand"></span>
+        <span class="toolbar__button next" title="Next tools"></span>
+        <span class="toolbar__button prev" title="Previous tools"></span>
+    </div>
+
+    <div class="hotKeys modal modal_fx_to-left">
+        <div class="modal__title">
+            <div class="modal__title__text">
+                <span>Hot Keys</span>
+                <div class="button -plus hotKeys__add">Add hot key</div>
+            </div>
+            <div class="modal__close-button button -remove" title="Close window 'Hot Keys'"></div>
+        </div>
+        <div class="modal__content"></div>
+        <div class="overlay">
+            <span data-title="Keys"></span>
+            <div class="overlay__save button">Save</div>
+            <div class="overlay__close button">Cancel</div>
+        </div>
+    </div>
+
+    <div id="libsAndStartup" class="modal modal_fx_to-left">
+        <div class="modal__title">
+            <div class="modal__title__text">
+                <div class="button active">Startup</div>
+                <div class="button">Libraries</div>
+            </div>
+            <div class="button -plus">Add library</div>
+            <div class="modal__close-button button -remove" title="Close window 'Libraries & Startup files'"></div>
+        </div>
+        <div class="modal__content" data-view="list">
+            <ul id="libsStartupFolder" class="folder opened">
+                <div class="folder__info">
+                    <i class="folder__explorer" title="~/Desktop"></i>
+                    <div class="folder__toggle"></div>
+                    <span></span>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <div id="open-as" class="modal modal_fx_to-left" data-file-path="">
+        <div class="modal__title">
+            <div class="modal__title__text">
+                <p class="modal__title__text__second">Open as...</p>
+            </div>
+            <div class="button -plus">Add program...</div>
+            <div class="button -checkmark open-as__button-ok">OK</div>
+            <div class="button -remove">Cancel</div>
+            <div class="modal__close-button button -remove" title="Close window 'Open As...'"></div>
+        </div>
+        <div class="modal__content" data-view="list">
+            <ul class="folder opened">
+                <div class="folder__info">
+                    <i class="folder__explorer" title="~/Desktop"></i>
+                    <div class="folder__toggle"></div>
+                    <span></span>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <div class="setting-wrapper">
+        <div id="empty-folders">
+            <span>Empty folders:</span>
+            <span>
+                <span id="empty-folders-hide" class="radio-button -inline" data-checked="true">Hide</span>
+                <span id="empty-folders-show" class="radio-button -inline" data-checked="false">Show</span>
+            </span>
+        </div>
+        <div id="lightVersion" class="checkbox button" data-checked="false">Light version</div>
+        <div id="startup-enabled" class="checkbox button" data-checked="false">Run scripts from startup</div>
+        <div id="app-activate" class="checkbox button" data-checked="false" title="Update folders when the application is activate">Update folders when the application is activate</div>
+        <div id="hotkeys-enabled" class="checkbox button" data-checked="true">Hot keys enabled</div>
+        <span class="clearfix"></span>
+        <ul id="extension-engine" class="dropdown" data-index="0">
+            <li class="dropdown__item selected" data-title="Method of the run:">Standart</li>
+            <ul class="dropdown__sub">
+                <li class="dropdown__item" data-value="standart">Standart</li>
+                <li class="dropdown__item" data-value="no-conflicts">No conflicts</li>
+            </ul>
+        </ul>
+        <div class="input-label save-script-interval">
+            <span>Save script interval</span>
+            <input type="text" id="save-script-interval" title="Timeout save script data" value="10000">
+            <i class="suffix">ms</i>
+        </div>
+        <div class="hr"></div>
+        <div class="input-label file-types">
+            <span>File types:</span>
+            <input type="text" id="file-types" placeholder="Please enter the file type..">
+        </div>
+        <div class="file-types-wrapper"></div>
+        <div class="input-label programs">
+            <span>Programs:</span>
+            <input type="text" id="programs" placeholder="Please enter the path of the program..">
+            <div id="choose-program" class="button -search"></div>
+        </div>
+        <div class="programs-wrapper"></div>
+        <div class="hr"></div>
+        <div id="auto-update" class="checkbox button" data-checked="false">Auto check of the update</div>
+        <div id="export-settings" class="button">Export settings</div>
+        <div id="import-settings" class="button">Import settings</div>
+        <div id="reset-settings" class="button">Reset settings</div>
+        <!-- <div id="save-settings" class="button">Save settings</div> -->
+        <div id="reload-ext" class="button">Reload extension</div>
+        <div id="close-ext" class="button">Close extension</div>
+        <div id="check-for-updates" class="button">Check for updates</div>
+        <div id="send-system-log" class="button">Send to developer a system log</div>
+        <div class="hr"></div>
+        <div class="donate">
+            <p>Send your questions and suggestions on the extension to <a href="mailto:creative@ladygin.pro" class="send-questions">creative@ladygin.pro</a></p>
+            <p>You can support the project:</p>
+            <a href="https://money.yandex.ru/to/410015333023120" class="donate__money donate__money_yandex"><i></i></a>
+            <span class="donate__money donate__money_webmoney"><i></i><span>Z609237768143</span></span>
+            <span class="donate__money donate__money_webmoney"><i></i><span>R309501618794</span></span>
+        </div>
+    </div>
+
+    <div class="setting-button"><i title="About ------------
+Alexander Ladygin
+www.ladygin.pro
+creative@ladygin.pro
+--------------------
+Version: "></i></div>
+    <div class="console">
+        <div class="button-expand-roll-up" title="Console toggle fullscreen mode"></div>
+        <p class="message">console</p>
+        <div class="console__editor-wrapper">
+            <div class="button -plus console__font-size" title="Font-size: LEFT Mouse Button: '+',
+--- RIGHT Mouse Button: '-'
+--- SHIFT L/R Mouse Button: 'reset'"></div>
+            <div class="button -search console__undo" title="Undo"></div>
+            <div class="button -list console__redo" title="Redo"></div>
+            <div class="button -update" title="Run script"></div>
+            <div class="checkbox extend-script" data-checked="false" title="Extend Script || Extension script">Extend Script</div>
+            <div id="console__editor" class="console__editor"></div>
+        </div>
+    </div>
+
+    <div class="buttons-wrapper">
+        <div id="app-mode" class="button button_default" title="Back to 'Folder' extension mode"></div>
+        <div id="button-settings" class="button button_default" title="Settings"></div>
+        <div id="button-add-group" class="button button_default" title="Add new buttons group"><b>Add group</b></div>
+        <div id="button-add" class="button button_default" title="Add new button"><b>Add button</b></div>
+    </div>
+
+    <input type="text" id="copy_to_clipboard">
+
+    <div class="hotKeys_listener">
+        <span>a</span>
+    </div>
+
+    <script src="./assets/js/CEPEngine.js"></script>
+    <script src="./assets/js/CSInterface.js"></script>
+    <script src="./assets/js/Ace/ace.js"></script>
+    <script src="./assets/js/prism.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

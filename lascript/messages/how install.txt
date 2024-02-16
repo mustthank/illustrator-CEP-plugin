@@ -1,0 +1,29 @@
+navigate to Windows -> Extensions -> LAScripts
+
+---------------------
+
+Installing an extension without creative cloud:
+
+On OS Windows:
+1. Remove the extension.
+2. Download the extension - http://www.extensions.ladygin.pro/LAScripts_v1.0.9.zxp
+3. Extract the file as an archive to the folder - %USERPROFILE%\AppData\Roaming\Adobe\CEP\extensions\LAScripts (if the folder does not exist - create it)
+
+In the registry, create the string parameter "PlayerDebugMode", the value "1"
+Press the keyboard shortcut "win + r", and enter the command "regedit"
+Path in the registry:
+HKEY_CURRENT_USER\Software\Adobe\CSXS.5
+HKEY_CURRENT_USER\Software\Adobe\CSXS.6
+HKEY_CURRENT_USER\Software\Adobe\CSXS.7
+HKEY_CURRENT_USER\Software\Adobe\CSXS.8
+etc...
+
+
+On MacOS:
+1. Remove the extension.
+2. Download the extension - http://www.extensions.ladygin.pro/LAScripts_v1.0.9.zxp
+3. Extract the file as an archive to the folder - ~/Library/Application Support/Adobe/CEP/extensions/LAScripts (if the folder does not exist - create it)
+
+In the terminal, enter the command: defaults write com.adobe.CSXS.6 PlayerDebugMode 1
+In the terminal, enter the command: defaults write com.adobe.CSXS.7 PlayerDebugMode 1
+In the terminal, enter the command: defaults write com.adobe.CSXS.8 PlayerDebugMode 1

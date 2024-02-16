@@ -1,0 +1,8 @@
+[ 20.01.24 - 15:34:26 ] [ Griddder ] [ version: 1.0.7 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+
+[ 01.01.24 - 9:5:52 ] [ Griddder ] [ version: 1.0.7 ] [ OS: Windows ] [ API: 11 ] [ Illustrator ]
+Requested JSON parse failed.
+
+

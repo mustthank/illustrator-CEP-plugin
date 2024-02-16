@@ -1,0 +1,1 @@
+LA(activeDocument.layers).unlockAll();

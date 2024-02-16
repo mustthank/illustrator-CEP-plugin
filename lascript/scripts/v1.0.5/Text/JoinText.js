@@ -1,0 +1,3 @@
+selection.joinText({
+    reverse: true
+});

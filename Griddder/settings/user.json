@@ -1,0 +1,83 @@
+{
+    "grid": {
+        "rows": 3,
+        "columns": 3,
+        "rows_gutter": "3 mm",
+        "columns_gutter": "3 mm",
+        "group": "only_cropmarks",
+        "align": "none",
+        "bounds": "geometric",
+        "fitToArtboard": false,
+        "margin": {
+            "enabled": false,
+            "values": [
+                "0 mm",
+                "0 mm",
+                "0 mm",
+                "0 mm"
+            ]
+        },
+        "cropMarks": {
+            "size": "3 mm",
+            "offset": "3 mm",
+            "setName": true,
+            "position": "relative",
+            "enabled": false,
+            "attr": {
+                "strokeWidth": "1 px",
+                "strokeColor": {
+                    "type": "cmyk",
+                    "values": [
+                        100,
+                        100,
+                        100,
+                        100
+                    ]
+                }
+            }
+        },
+        "hexColor": "#000000"
+    },
+    "setMaker": {
+        "rows": 3,
+        "columns": 3,
+        "size": "50 px",
+        "gutter": "10 px",
+        "offset": "0 px",
+        "randomOrder": false,
+        "ungroupSets": true,
+        "name": {
+            "body": "MySet_$",
+            "prefix": "LA_",
+            "suffix": ".svg"
+        },
+        "setOnArtboard": {
+            "setName": true,
+            "enabled": true,
+            "bleed": [
+                "10 px",
+                "10 px"
+            ],
+            "gutter": "10 px"
+        }
+    },
+    "stepper": {
+        "direction": "center",
+        "position": "relative",
+        "bounds": "visible",
+        "copies": 0,
+        "ghostCopies": false,
+        "eachSelection": false,
+        "spacing": {
+            "x": "0 px",
+            "y": "0 px"
+        }
+    },
+    "section": "grid",
+    "autoUpdate": true,
+    "toLogFile": true,
+    "console": {
+        "collapse": true,
+        "expand": false
+    }
+}

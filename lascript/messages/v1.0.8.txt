@@ -1,0 +1,11 @@
+<div style="font-size: 110%;">
+    <div class="note">
+        <h4 class="text_normal" style="margin: 0;">Fixed bugs and added new features - only CC 2017+:</h4>
+        <br>
+        <div class="note note_alarm">Added HotKeys</div>
+        <br>
+        <div class="note note_alarm">Added Zip (add, unzip)</div>
+        <br>
+        <div class="note note_alarm">Extension update without creative cloud</div>
+    </div>
+</div>

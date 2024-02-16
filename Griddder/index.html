@@ -1,0 +1,298 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Griddder</title>
+    <meta http-equiv="Pragma" content="no-cache" />
+    <link rel="stylesheet" type="text/css" href="assets/css/app.css"/>
+</head>
+<body class="fade">
+
+    <div class="toggle_sections-wrapper">
+        <div class="button la-4 active" data-section="grid">Grid</div>
+        <div class="button la-4" data-section="setMaker">Set Maker</div>
+        <div class="button la-4" data-section="stepper">Step & Repeat</div>
+        <div class="clearfix"></div>
+        <div class="hr"></div>
+    </div>
+
+    <div class="sections">
+
+        <div id="grid" class="grid-wrapper active">
+            <div class="la__fields">
+                <ul class="grid__align dropdown" data-index="0">
+                    <li class="dropdown__item selected" data-title="Align:">None</li>
+                    <ul class="dropdown__sub">
+                        <li class="dropdown__item" data-value="none">None</li>
+                        <li class="dropdown__item" data-value="center">Center</li>
+                        <li class="dropdown__item" data-value="topleft">Top Left</li>
+                        <li class="dropdown__item" data-value="topcenter">Top Center</li>
+                        <li class="dropdown__item" data-value="topright">Top right</li>
+                        <li class="dropdown__item" data-value="middleright">Middle Right</li>
+                        <li class="dropdown__item" data-value="bottomright">Bottom Right</li>
+                        <li class="dropdown__item" data-value="bottomcenter">Bottom Center</li>
+                        <li class="dropdown__item" data-value="bottomleft">Bottom Left</li>
+                        <li class="dropdown__item" data-value="middleleft">Middle Left</li>
+                    </ul>
+                </ul>
+                <ul class="grid__bounds dropdown" data-index="0">
+                    <li class="dropdown__item selected" data-title="Bounds:">Geometric</li>
+                    <ul class="dropdown__sub">
+                        <li class="dropdown__item" data-value="visible">Visible</li>
+                        <li class="dropdown__item" data-value="geometric">Geometric</li>
+                    </ul>
+                </ul>
+                <div class="grid__filed__values">
+                    <svg class="icon_svg theme_svg-icon svg_rows" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="25px" height="23.5px" viewBox="0 0 25 23.5" style="overflow:scroll;enable-background:new 0 0 25 23.5;" xml:space="preserve"><defs></defs><rect width="25" height="5"/><rect x="1.6" y="19.5" width="4" height="3.9"/><rect x="1.6" y="10.5" width="4" height="3.9"/><rect x="10.5" y="19.5" width="4" height="3.9"/><rect x="10.5" y="10.5" width="4" height="3.9"/><rect x="19.5" y="19.5" width="4" height="3.9"/><rect x="19.5" y="10.5" width="4" height="3.9"/></svg>
+                    <input type="number" onFocus="this.setSelectionRange(0, this.value.length)" min="1" value="2" class="la-full grid_rows number_wheel number_key" placeholder="Rows" title="Rows" name="grid.rows" sele>
+                </div>
+                <div class="grid__filed__values">
+                    <svg class="icon_svg theme_svg-icon svg_columns" style="transform: rotate(-90deg);" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="25px" height="23.5px" viewBox="0 0 25 23.5" style="overflow:scroll;enable-background:new 0 0 25 23.5;" xml:space="preserve"><defs></defs><rect width="25" height="5"/><rect x="1.6" y="19.5" width="4" height="3.9"/><rect x="1.6" y="10.5" width="4" height="3.9"/><rect x="10.5" y="19.5" width="4" height="3.9"/><rect x="10.5" y="10.5" width="4" height="3.9"/><rect x="19.5" y="19.5" width="4" height="3.9"/><rect x="19.5" y="10.5" width="4" height="3.9"/></svg>
+                    <input type="number" onFocus="this.setSelectionRange(0, this.value.length)" min="1" value="2" class="la-full grid_columns number_wheel number_key" placeholder="Columns" title="Columns" name="grid.columns">
+                </div>
+                <div class="grid__filed__values">
+                    <svg class="icon_svg theme_svg-icon svg_gutter_rows" style="transform: rotate(90deg);" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" viewBox="0 0 15 15" xml:space="preserve"><defs></defs><g><rect width="3" height="15"/><polygon points="11.5,6.8 9.5,4.8 8.8,5.5 10.3,7 4.7,7 6.2,5.5 5.5,4.8 3.5,6.8 2.8,7.5 3.5,8.2 5.5,10.2 6.2,9.5 4.7,8 10.3,8 8.8,9.5 9.5,10.2 11.5,8.2 12.2,7.5  "/><rect x="12" width="3" height="15"/></g></svg>
+                    <input type="text" onFocus="this.setSelectionRange(0, this.value.length)" value="3 mm" min="0" class="la-full grid_rows_gutter number_wheel number_key" data-unit="mm" placeholder="Rows gutter" title="Rows gutter" name="grid.rows_gutter">
+                </div>
+                <div class="grid__filed__values">
+                    <svg class="icon_svg theme_svg-icon svg_gutter_columns" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" viewBox="0 0 15 15" xml:space="preserve"><defs></defs><g><rect width="3" height="15"/><polygon points="11.5,6.8 9.5,4.8 8.8,5.5 10.3,7 4.7,7 6.2,5.5 5.5,4.8 3.5,6.8 2.8,7.5 3.5,8.2 5.5,10.2 6.2,9.5 4.7,8 10.3,8 8.8,9.5 9.5,10.2 11.5,8.2 12.2,7.5  "/><rect x="12" width="3" height="15"/></g></svg>
+                    <input type="text" onFocus="this.setSelectionRange(0, this.value.length)" value="3 mm" min="0" class="la-full grid_columns_gutter number_wheel number_key" data-unit="mm" placeholder="Columns gutter" title="Columns gutter" name="grid.columns_gutter">
+                </div>
+                <div class="grid__field__margin">
+                    <svg style="transform: rotate(-90deg);" class="icon_svg theme_svg-icon svg_margin_top" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" xml:space="preserve"><defs></defs><rect x="21" width="4" height="25"/><path d="M2.1,19.5h11.8c1.2,0,2.1-0.9,2.1-2.1V7.6c0-1.2-0.9-2.1-2.1-2.1H2.1C0.9,5.5,0,6.4,0,7.6v9.8C0,18.6,0.9,19.5,2.1,19.5z"/></svg>
+                    <input type="text" onFocus="this.setSelectionRange(0, this.value.length)" value="0 mm" min="0" class="la-full grid_margin_top number_wheel number_key" data-unit="mm" placeholder="Margin Top" title="Margin Top" name="grid.margin.values.0">
+                </div>
+                <div class="grid__field__margin">
+                    <svg class="icon_svg theme_svg-icon svg_margin_right" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" xml:space="preserve"><defs></defs><rect x="21" width="4" height="25"/><path d="M2.1,19.5h11.8c1.2,0,2.1-0.9,2.1-2.1V7.6c0-1.2-0.9-2.1-2.1-2.1H2.1C0.9,5.5,0,6.4,0,7.6v9.8C0,18.6,0.9,19.5,2.1,19.5z"/></svg>
+                    <input type="text" onFocus="this.setSelectionRange(0, this.value.length)" value="0 mm" min="0" class="la-full grid_margin_right number_wheel number_key" data-unit="mm" placeholder="Margin Right" title="Margin Right" name="grid.margin.values.1">
+                </div>
+                <div class="grid__field__margin">
+                    <svg style="transform: rotate(90deg);" class="icon_svg theme_svg-icon svg_margin_bottom" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" xml:space="preserve"><defs></defs><rect x="21" width="4" height="25"/><path d="M2.1,19.5h11.8c1.2,0,2.1-0.9,2.1-2.1V7.6c0-1.2-0.9-2.1-2.1-2.1H2.1C0.9,5.5,0,6.4,0,7.6v9.8C0,18.6,0.9,19.5,2.1,19.5z"/></svg>
+                    <input type="text" onFocus="this.setSelectionRange(0, this.value.length)" value="0 mm" min="0" class="la-full grid_margin_bottom number_wheel number_key" data-unit="mm" placeholder="Margin Bottom" title="Margin Bottom" name="grid.margin.values.2">
+                </div>
+                <div class="grid__field__margin">
+                    <svg style="transform: rotate(180deg);" class="icon_svg theme_svg-icon svg_margin_left" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" xml:space="preserve"><defs></defs><rect x="21" width="4" height="25"/><path d="M2.1,19.5h11.8c1.2,0,2.1-0.9,2.1-2.1V7.6c0-1.2-0.9-2.1-2.1-2.1H2.1C0.9,5.5,0,6.4,0,7.6v9.8C0,18.6,0.9,19.5,2.1,19.5z"/></svg>
+                    <input type="text" onFocus="this.setSelectionRange(0, this.value.length)" value="0 mm" min="0" class="la-full grid_margin_left number_wheel number_key" data-unit="mm" placeholder="Margin Left" title="Margin Left" name="grid.margin.values.3" >
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="checkbox checkbox_dot button margin_enabled" data-checked="false">Margin</div>
+            <ul class="grid__group dropdown" data-index="0">
+                <li class="dropdown__item selected" data-title="Group:">Only CropMarks</li>
+                <ul class="dropdown__sub">
+                    <li class="dropdown__item" data-value="none">None</li>
+                    <li class="dropdown__item" data-value="only_items">Only Items</li>
+                    <li class="dropdown__item" data-value="only_cropmarks">Only CropMarks</li>
+                    <li class="dropdown__item" data-value="items_cropmarks">Items and CropMarks</li>
+                </ul>
+            </ul>
+            <div class="clearfix"></div>
+            <div class="cropmarks">
+                <div class="hr_pure_title"><span>Crop Marks</span></div>
+                <div class="cropmarks__enabled checkbox la-4" data-checked="false">Enabled</div>
+                <div class="cropmarks__size">
+                    <svg class="icon_svg theme_svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"><path d="M13.9 0H1.1C.5 0 0 .5 0 1.1v12.7c0 .7.5 1.2 1.1 1.2h12.7c.6 0 1.1-.5 1.1-1.1V1.1c.1-.6-.4-1.1-1-1.1zm.1 13.9c0 .1-.1.1-.1.1H1.1l-.1-.1V1.1l.1-.1h12.7c.1 0 .2.1.2.1v12.8z"/><path d="M5.7 3.7L2.2 7.2c-.1.1-.1.4 0 .5l3.5 3.5c.3.3.7.2.7-.2V4c0-.4-.4-.5-.7-.3zm2.9.3v7c0 .3.4.5.6.3l3.5-3.5c.1-.1.1-.4 0-.5L9.3 3.7c-.3-.2-.7-.1-.7.3z"/></svg>
+                    <input type="text" onFocus="this.setSelectionRange(0, this.value.length)" value="3 mm" class="cropmarks__size_value number_wheel number_key" data-unit="mm" data-min="1" placeholder="CropMarks Size" title="CropMarks Size" name="grid.cropMarks.size">
+                </div>
+                <div class="clearfix"></div>
+                <div class="cropmarks__strokeWidth">
+                    <svg class="icon_svg theme_svg-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" xml:space="preserve"><defs></defs><g><g><rect y="17.5" width="25" height="7.5"/><rect y="7.1" width="25" height="5.5"/><rect width="25" height="2.8"/></g></g></svg>
+                    <input type="text" onFocus="this.setSelectionRange(0, this.value.length)" value="1 px" class="cropmarks__size__strokeWidth number_wheel number_key" data-unit="px" data-min="1" placeholder="CropMarks Stroke Width" title="CropMarks Stroke Width" name="grid.cropMarks.attr.strokeWidth">
+                </div>
+                <div class="cropmarks__offset">
+                    <svg class="icon_svg theme_svg-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" xml:space="preserve"><defs></defs><g><path d="M7,20.8h1.5V23H7v2h18V6.5h-1.5V8h-2.1V6.5H7V20.8z M18.8,23v-2.2h2.6v-2.7h2.1l0,4.9H18.8z"/><polygon points="0,5.8 2.3,5.8 2.3,2.4 6.6,2.4 6.6,0 0,0    "/><polygon points="23.5,3.7 21.2,3.7 21.2,2.4 17,2.4 17,0 23.5,0  "/><polygon points="0,23.2 4.1,23.2 4.1,20.8 2.3,20.8 2.3,17.4 0,17.4  "/></g></svg>
+                    <input type="text" onFocus="this.setSelectionRange(0, this.value.length)" value="3 mm" class="cropmarks__offset_value number_wheel number_key" data-unit="mm" data-min="0" placeholder="CropMarks offset" title="CropMarks offset" name="grid.cropMarks.offset">
+                </div>
+                <ul class="cropmarks__position dropdown" data-index="0">
+                    <li class="dropdown__item selected" data-title="Position:">Absolute</li>
+                    <ul class="dropdown__sub">
+                        <li class="dropdown__item" data-value="absolute">Absolute</li>
+                        <li class="dropdown__item" data-value="relative">Relative</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <div class="cropmarks__color__wrapper">
+                <ul class="cropmarks__color_type dropdown la-6" data-index="0">
+                    <li class="dropdown__item selected" data-title="Color Type:">CMYK</li>
+                    <ul class="dropdown__sub">
+                        <li class="dropdown__item" data-value="cmyk">CMYK</li>
+                        <li class="dropdown__item" data-value="rgb">RGB</li>
+                    </ul>
+                </ul>
+                <div class="cropmarks__choose_color la-6"></div>
+                <input type="number" min="0" max="100" class="cropmarks__color_value number_wheel number_key la-3" value="100" name="grid.cropMarks.attr.strokeColor.values.0">
+                <input type="number" min="0" max="100" class="cropmarks__color_value number_wheel number_key la-3" value="100" name="grid.cropMarks.attr.strokeColor.values.1">
+                <input type="number" min="0" max="100" class="cropmarks__color_value number_wheel number_key la-3" value="100" name="grid.cropMarks.attr.strokeColor.values.2">
+                <input type="number" min="0" max="100" class="cropmarks__color_value number_wheel number_key la-3" value="100" name="grid.cropMarks.attr.strokeColor.values.3">
+            </div>
+            <div class="clearfix"></div>
+            <div class="hr"></div>
+            <div class="la__fields" data-columns="2">
+                <div class="button button_action grid_make la-6">Make</div>
+                <div class="button button_action button_action_theme_primary grid_fit la-6">Fit to Artboard</div>
+            </div>
+        </div>
+        
+        <div id="setMaker" class="setMaker-wrapper">
+
+            <div class="hr_pure_title"><span>Sets count</span></div>
+            <div class="la__fields" data-columns="2">
+                <div>
+                    <svg class="icon_svg theme_svg-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="25px" height="23.5px" viewBox="0 0 25 23.5" style="overflow:scroll;enable-background:new 0 0 25 23.5;" xml:space="preserve"><defs></defs><rect width="25" height="5"/><rect x="1.6" y="19.5" width="4" height="3.9"/><rect x="1.6" y="10.5" width="4" height="3.9"/><rect x="10.5" y="19.5" width="4" height="3.9"/><rect x="10.5" y="10.5" width="4" height="3.9"/><rect x="19.5" y="19.5" width="4" height="3.9"/><rect x="19.5" y="10.5" width="4" height="3.9"/></svg>
+                    <input type="number" min="1" value="2" class="la-full setMaker_rows number_wheel number_key" placeholder="Rows" title="Rows" name="setMaker.rows">
+                </div>
+                <div>
+                    <svg class="icon_svg theme_svg-icon" style="transform: rotate(-90deg);" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="25px" height="23.5px" viewBox="0 0 25 23.5" style="overflow:scroll;enable-background:new 0 0 25 23.5;" xml:space="preserve"><defs></defs><rect width="25" height="5"/><rect x="1.6" y="19.5" width="4" height="3.9"/><rect x="1.6" y="10.5" width="4" height="3.9"/><rect x="10.5" y="19.5" width="4" height="3.9"/><rect x="10.5" y="10.5" width="4" height="3.9"/><rect x="19.5" y="19.5" width="4" height="3.9"/><rect x="19.5" y="10.5" width="4" height="3.9"/></svg>
+                    <input type="number" min="1" value="2" class="la-full setMaker_columns number_wheel number_key" placeholder="Columns" title="Columns" name="setMaker.columns">
+                </div>
+                <div>
+                    <svg class="icon_svg theme_svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"><path d="M13.9 0H1.1C.5 0 0 .5 0 1.1v12.7c0 .7.5 1.2 1.1 1.2h12.7c.6 0 1.1-.5 1.1-1.1V1.1c.1-.6-.4-1.1-1-1.1zm.1 13.9c0 .1-.1.1-.1.1H1.1l-.1-.1V1.1l.1-.1h12.7c.1 0 .2.1.2.1v12.8z"/><path d="M5.7 3.7L2.2 7.2c-.1.1-.1.4 0 .5l3.5 3.5c.3.3.7.2.7-.2V4c0-.4-.4-.5-.7-.3zm2.9.3v7c0 .3.4.5.6.3l3.5-3.5c.1-.1.1-.4 0-.5L9.3 3.7c-.3-.2-.7-.1-.7.3z"/></svg>
+                    <input type="text" min="0" value="2 px" class="la-full setMaker_size number_wheel number_key" data-unit="px" placeholder="Item Size" title="Item Size" name="setMaker.size">
+                </div>
+                <div>
+                    <svg class="icon_svg theme_svg-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" viewBox="0 0 15 15" xml:space="preserve"><defs></defs><g><rect width="3" height="15"/><polygon points="11.5,6.8 9.5,4.8 8.8,5.5 10.3,7 4.7,7 6.2,5.5 5.5,4.8 3.5,6.8 2.8,7.5 3.5,8.2 5.5,10.2 6.2,9.5 4.7,8 10.3,8 8.8,9.5 9.5,10.2 11.5,8.2 12.2,7.5  "/><rect x="12" width="3" height="15"/></g></svg>
+                    <input type="text" min="0" value="0 px" class="la-full setMaker_gutter number_wheel number_key" data-unit="px" placeholder="Items Gutter" title="Items Gutter" name="setMaker.gutter">
+                </div>
+                <div class="checkbox button setMaker_ungroup" data-checked="false">Ungroup sets</div>
+                <div class="checkbox button setMaker_randomOrder" data-checked="false">Random order</div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="la__fields" data-columns="2">
+                <div class="hr_pure_title"><span>Artboard for each set</span></div>
+                <div class="checkbox button setMaker_artboard_enabled" data-checked="false">Artboard enabled</div>
+            </div>
+            <div class="la__fields" data-columns="2">
+                <div class="setMaker__field__bleed disabled">
+                    <svg style="transform: rotate(-90deg);" class="icon_svg theme_svg-icon svg_bleed_top_bottom" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" xml:space="preserve"><defs></defs><rect x="21" width="4" height="25"/><path d="M2.1,19.5h11.8c1.2,0,2.1-0.9,2.1-2.1V7.6c0-1.2-0.9-2.1-2.1-2.1H2.1C0.9,5.5,0,6.4,0,7.6v9.8C0,18.6,0.9,19.5,2.1,19.5z"/></svg>
+                    <input type="text" min="0" value="2 px" class="la-full setMaker_artboard_bleed_top_bottom number_wheel number_key" data-unit="px" placeholder="Bleed Artboard - Top & Bottom" title="Bleed Artboard Top Bottom" name="setMaker.setOnArtboard.bleed.0">
+                </div>
+                <div class="setMaker__field__bleed disabled">
+                    <svg class="icon_svg theme_svg-icon svg_bleed_right_left" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" xml:space="preserve"><defs></defs><rect x="21" width="4" height="25"/><path d="M2.1,19.5h11.8c1.2,0,2.1-0.9,2.1-2.1V7.6c0-1.2-0.9-2.1-2.1-2.1H2.1C0.9,5.5,0,6.4,0,7.6v9.8C0,18.6,0.9,19.5,2.1,19.5z"/></svg>
+                    <input type="text" min="0" value="2 px" class="la-full setMaker_artboard_bleed_right_left number_wheel number_key" data-unit="px" placeholder="Bleed Artboard - Right & Left" title="Bleed Artboard Right Left" name="setMaker.setOnArtboard.bleed.1">
+                </div>
+                <div class="setMaker_artboard disabled">
+                    <svg class="icon_svg theme_svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"><path d="M13.9 0H1.1C.5 0 0 .5 0 1.1v12.7c0 .7.5 1.2 1.1 1.2h12.7c.6 0 1.1-.5 1.1-1.1V1.1c.1-.6-.4-1.1-1-1.1zm.1 13.9c0 .1-.1.1-.1.1H1.1l-.1-.1V1.1l.1-.1h12.7c.1 0 .2.1.2.1v12.8z"/><path d="M5.7 3.7L2.2 7.2c-.1.1-.1.4 0 .5l3.5 3.5c.3.3.7.2.7-.2V4c0-.4-.4-.5-.7-.3zm2.9.3v7c0 .3.4.5.6.3l3.5-3.5c.1-.1.1-.4 0-.5L9.3 3.7c-.3-.2-.7-.1-.7.3z"/></svg>
+                    <input type="text" min="0" value="2 px" class="la-full setMaker_artboard_gutter number_wheel number_key" data-unit="px" placeholder="Gutter Artboard" title="Gutter Artboard" name="setMaker.setOnArtboard.gutter">
+                </div>
+                <div class="checkbox button setMaker_artboard_name" data-checked="false">Set name on artboard</div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="hr_pure_title setMaker__name disabled"><span>Name of the sets (type "$" == counter)</span></div>
+            <div class="la__fields setMaker__name disabled" data-columns="3">
+                <div>
+                    <input type="text" class="setMaker__name_prefix" placeholder="Prefix" title="Set Prefix">
+                </div>
+                <div>
+                    <input type="text" class="setMaker__name_value" placeholder="Body" title="Set Name">
+                </div>
+                <div>
+                    <input type="text" class="setMaker__name_suffix" placeholder="Suffix" title="Set Suffix">
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="la__fields" data-columns="2">
+                <div class="button button_action setMaker_create">Make</div>
+                <div class="button button_action button_action_theme_primary setMaker_align">Align</div>
+            </div>
+        </div>
+        
+        <div id="stepper" class="stepper-wrapper">
+            <div class="stepper__direction">
+                <div class="radio-button stepper__direction_radio" data-direction="topleft" data-checked="false"></div>
+                <div class="radio-button stepper__direction_radio" data-direction="topcenter" data-checked="false"></div>
+                <div class="radio-button stepper__direction_radio" data-direction="topright" data-checked="false"></div>
+                <div class="radio-button stepper__direction_radio" data-direction="middleleft" data-checked="false"></div>
+                <div class="radio-button stepper__direction_radio" data-direction="center" data-checked="true"></div>
+                <div class="radio-button stepper__direction_radio" data-direction="middleright" data-checked="false"></div>
+                <div class="radio-button stepper__direction_radio" data-direction="bottomleft" data-checked="false"></div>
+                <div class="radio-button stepper__direction_radio" data-direction="bottomcenter" data-checked="false"></div>
+                <div class="radio-button stepper__direction_radio" data-direction="bottomright" data-checked="false"></div>
+            </div>
+            <div class="stepper__position-wrapper">
+                <ul class="stepper__position dropdown" data-index="0">
+                    <li class="dropdown__item selected" data-title="Position:">Relative</li>
+                    <ul class="dropdown__sub">
+                        <li class="dropdown__item" data-value="relative">Relative</li>
+                        <li class="dropdown__item" data-value="absolute">Absolute</li>
+                    </ul>
+                </ul>
+                <ul class="stepper__bounds dropdown" data-index="0">
+                    <li class="dropdown__item selected" data-title="Bounds:">Geometric</li>
+                    <ul class="dropdown__sub">
+                        <li class="dropdown__item" data-value="visible">Visible</li>
+                        <li class="dropdown__item" data-value="geometric">Geometric</li>
+                    </ul>
+                </ul>
+                <div class="la__fields">
+                    <div>
+                        <svg style="transform: rotate(180deg);" class="icon_svg theme_svg-icon svg_stepper__spacing_x" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" xml:space="preserve"><defs></defs><rect x="21" width="4" height="25"/><path d="M2.1,19.5h11.8c1.2,0,2.1-0.9,2.1-2.1V7.6c0-1.2-0.9-2.1-2.1-2.1H2.1C0.9,5.5,0,6.4,0,7.6v9.8C0,18.6,0.9,19.5,2.1,19.5z"/></svg>
+                        <input type="text" onFocus="this.setSelectionRange(0, this.value.length)"  class="stepper__spacing_x number_wheel number_key" value="0 mm" data-unit="mm" placeholder="Spacing X" title="Spacing X" name="stepper.spacing.x">
+                    </div>
+                    <div>
+                        <svg style="transform: rotate(90deg);" class="icon_svg theme_svg-icon svg_stepper__spacing_y" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" xml:space="preserve"><defs></defs><rect x="21" width="4" height="25"/><path d="M2.1,19.5h11.8c1.2,0,2.1-0.9,2.1-2.1V7.6c0-1.2-0.9-2.1-2.1-2.1H2.1C0.9,5.5,0,6.4,0,7.6v9.8C0,18.6,0.9,19.5,2.1,19.5z"/></svg>
+                        <input type="text" onFocus="this.setSelectionRange(0, this.value.length)" class="stepper__spacing_y number_wheel number_key" value="0 mm" data-unit="mm" placeholder="Spacing Y" title="Spacing Y" name="stepper.spacing.y">
+                    </div>
+                </div>
+            </div>
+            <div class="hr"></div>
+            <div class="la__fields" data-columns="1">
+                <div>
+                    <svg class="icon_svg theme_svg-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 25 25" style="enable-background:new 0 0 25 25;" xml:space="preserve"><defs></defs><g><g><path d="M11.2,2.3h9.4h2.1v2.1v9.4v2.1h-2.3v2.3h2.3c1.3,0,2.3-1,2.3-2.3v-2.1V4.4V2.3C25,1,24,0,22.7,0h-2.1h-9.4H9.1 C7.8,0,6.8,1,6.8,2.3v2.3h2.3V2.3H11.2L11.2,2.3L11.2,2.3z M0,9.1c0-1.3,1-2.3,2.3-2.3h13.6c1.3,0,2.3,1,2.3,2.3v13.6 c0,1.3-1,2.3-2.3,2.3H2.3C1,25,0,24,0,22.7V9.1L0,9.1L0,9.1z"/></g></g></svg>
+                    <input type="text" onFocus="this.setSelectionRange(0, this.value.length)" min="0" class="stepper__copies number_wheel number_key" value="0" data-unit="" placeholder="Number of copies" title="Number of copies" name="stepper.copies">
+                </div>
+                <div class="checkbox stepper__each" data-checked="false">Apply for each elements</div>
+                <div class="checkbox stepper__ghost" data-checked="false">Ghost copies</div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="hr"></div>
+            <div class="la__fields" data-columns="2">
+                <div class="button button_action stepper_apply">Apply</div>
+                <div class="button button_action button_action_theme_primary stepper_apply_to_copies">Apply for copies</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="setting-wrapper">
+        <div class="hr"></div>
+        <div id="auto-update" class="checkbox button" data-checked="false">Auto check of the update</div>
+        <div id="export-settings" class="button">Export settings</div>
+        <div id="import-settings" class="button">Import settings</div>
+        <div id="reset-settings" class="button">Reset settings</div>
+        <!-- <div id="save-settings" class="button">Save settings</div> -->
+        <div id="reload-ext" class="button">Reload extension</div>
+        <div id="close-ext" class="button">Close extension</div>
+        <div id="check-for-updates" class="button">Check for updates</div>
+        <div id="send-system-log" class="button">Send to developer a system log</div>
+        <div class="hr"></div>
+        <div class="donate">
+            <p>Send your questions and suggestions on the extension to <a href="mailto:creative@ladygin.pro" class="send-questions">creative@ladygin.pro</a></p>
+            <p>You can support the project:</p>
+            <a href="https://money.yandex.ru/to/410015333023120" class="donate__money donate__money_yandex"><i></i></a>
+            <span class="donate__money donate__money_webmoney"><i></i><span>Z609237768143</span></span>
+            <span class="donate__money donate__money_webmoney"><i></i><span>R309501618794</span></span>
+        </div>
+    </div>
+
+    <div class="setting-button"><i title="About ------------
+Alexander Ladygin
+www.ladygin.pro
+creative@ladygin.pro
+--------------------
+Version: "></i></div>
+
+    <div class="console">
+        <div class="button-expand-roll-up" title="Console toggle fullscreen mode"></div>
+        <p class="message">console</p>
+    </div>
+
+    <input type="text" id="copy_to_clipboard">
+
+
+    <script src="./assets/js/CEPEngine.js"></script>
+    <script src="./assets/js/CSInterface.js"></script>
+    <script src="./assets/js/prism.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

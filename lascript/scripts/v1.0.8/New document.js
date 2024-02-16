@@ -1,0 +1,1 @@
+app.documents.add();

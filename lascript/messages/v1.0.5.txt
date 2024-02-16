@@ -1,0 +1,47 @@
+<h4 class="note text_normal" style="margin-top: 0;">Fixed previous bugs and implemented work with scripts in "startup" and "libraries". Added events to button "Run Script"</h4>
+<h4 class="text_normal">Tool "Run Scripts" events: *<i>write to the extend script</i></h4>
+<pre><code class="language-javascript">
+event commands: {
+    altKey:             "a",
+    ctrlKey:            "c",
+    shiftKey:           "s",
+    allMouseButton:     "$",
+    leftMouseButton:    "l",
+    rightMouseButton:   "r"
+}
+
+event start - '// --lascripts-event-start="commands"'
+    your code
+event end - '// --lascripts-event-end="commands start"'
+
+### Example
+
+    // --lascripts-event-start="r"
+
+        alert("Only press Right mouse button!");
+        // please click to tool "Run Script" - right mouse button
+
+    // --lascripts-event-end="r"
+
+### End example
+</code></pre>
+<h4 class="text_normal">Extension script (eval)</h4>
+<pre>
+<code class="language-javascript">
+start eval code - "// --lascripts-extension-engine-start"
+    ...your code
+end eval code - "// --lascripts-extension-engine-end"
+
+### Example
+
+    // --lascripts-extension-engine-start
+
+        $console.node.css({ "background-color": "#f00" });
+
+    // --lascripts-extension-engine-end
+
+    alert("Extend Script, application: " + app.name);
+
+### End example
+</code>
+</pre>
