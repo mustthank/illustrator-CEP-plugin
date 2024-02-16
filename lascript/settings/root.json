@@ -1,0 +1,9 @@
+{
+    "transferCompleted": {
+        "ILST": false,
+        "PHXS": false,
+        "IDSN": false,
+        "v1_1_0": true
+    },
+    "oldVersion": "1.0.9"
+}
