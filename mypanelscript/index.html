@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link id="mainStyle" rel="stylesheet" href="css/styles.css" />
+  <title></title>
+</head>
+
+<body>
+  <div id="content">
+    <div id="main">
+        <div class="featured-author-center">
+            <figure class="featured-author-picture">
+                <img class="gambar" src="./images/img01.jpg" alt="Masrur Afandy">
+            </figure>
+            <div class="featured-author-info">
+                <h2 class="name">mustthank</h2>
+                <!-- <div class="desc">@masmasrur</div> -->
+                <br>
+        <marquee class="marquee" behavior="scroll" direction="left">
+        <i class="fab fa-facebook"></i> : masrur.afandy1
+        <i class="fab fa-twitter"></i> : @masmasrur
+        <i class="fab fa-instagram"></i> : @masrurafandy
+        <i class="fab fa-youtube"></i> : masrur afandy
+        <i class="fa fa-globe"></i> : www.kreasiutama.com
+        
+        </marquee>
+            </div>
+        </div>
+      <div class="section live-input-container" hidden>
+        <input type="checkbox" id="show-live-input" class="toggle-input show-live-input" checked="checked">
+        <label class="section-header toggle" for="show-live-input">Live Input</label>
+        <div class="live-input-section toggle-content">
+          <div class="section-editor">
+            <pre id="editor">// js input</pre>
+          </div>
+          <button id="run-input" class="button">run</button>
+        </div>
+      </div>
+      <div class="section scripts">
+        <div id="linked-scripts2" class="linked-scripts"></div>
+        <div class="output-panel output-folder-path">
+          <span class="folder-path">
+            Folder Path:
+            <span id="folder-path">local path not set</span>
+          </span>
+          <button class="button"  id="set-folder" style="width:100%;background-color: rgb(97, 15, 28);">  Set Folder Path </button>
+        </div>
+      </div>
+      <div class="section">
+        <label class="section-header">Load Remote Script </label>
+        <div class="remote-script">
+          <input type="text" id="script-url" class="text-input" placeholder="https://gist.github.com/script.js" />
+          <button id="load-script" class="button load-script">Load</button>
+        </div>
+        
+      </div>
+      <div id="output" class="output-panel "></div>
+
+    </div>
+  </div>
+
+  <script src="js/libs/CSInterface.js"></script>
+  <script src="js/libs/jquery-2.0.2.min.js"></script>
+  <script src="js/libs/underscore.js"></script>
+  <script src="js/themeManager.js"></script>
+  <script src="js/libs/ace.js"></script>
+  <!-- <script src="js/libs/select-count.js"></script> -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
