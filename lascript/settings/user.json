@@ -1,0 +1,131 @@
+{
+    "extension": {
+        "mode": "folder"
+    },
+    "fontSize": 13,
+    "toLogFile": true,
+    "autoUpdate": true,
+    "saveInterval": 2000,
+    "engine": "standart",
+    "editor": {
+        "wordWrap": false,
+        "theme": "default",
+        "specClass": false
+    },
+    "scrollTop": {
+        "folder": 478,
+        "editor": 0,
+        "editorFile": 0,
+        "favorites": 0
+    },
+    "modeEditFile": {
+        "path": "",
+        "name": ""
+    },
+    "activeSection": "folder-wrapper",
+    "selectPath": "C:/Users/mustt/OneDrive/Dokumen/LA Extensions/LAScripts/Illustrator/My Scripts",
+    "updateFolderWhenAppActivate": true,
+    "emptyView": "hide",
+    "view": {
+        "folder": "tree"
+    },
+    "folders": [
+        "C:/Users/mustt/OneDrive/Dokumen/LA Extensions/LAScripts",
+        "C:\\Users\\mustt\\OneDrive\\Dokumen\\LA Extensions\\LAScripts_toolbar\\v1.0.5",
+        "C:\\Users\\mustt\\OneDrive\\Dokumen\\LA Extensions\\LAScripts\\v1.0.5",
+        "C:\\Users\\mustt\\OneDrive\\Dokumen\\LA Extensions\\LAScripts_toolbar\\v1.0.8",
+        "C:\\Users\\mustt\\OneDrive\\Dokumen\\LA Extensions\\LAScripts_toolbar\\v1.0.9",
+        "C:\\Users\\mustt\\OneDrive\\Dokumen\\LA Extensions\\LAScripts_toolbar\\v1.1.0",
+        "C:\\Users\\mustt\\OneDrive\\Dokumen\\LA Extensions\\LAScripts\\v1.0.7",
+        "C:\\Users\\mustt\\OneDrive\\Dokumen\\LA Extensions\\LAScripts\\v1.0.8",
+        "C:\\Users\\mustt\\OneDrive\\Dokumen\\LA Extensions\\LAScripts\\v1.0.9",
+        "C:\\Users\\mustt\\OneDrive\\Dokumen\\LA Extensions\\LAScripts\\v1.1.0",
+        "C:\\Users\\mustt\\OneDrive\\Dokumen\\LA Extensions\\LAScripts_toolbar\\v1.0.5",
+        "C:\\Users\\mustt\\OneDrive\\Dokumen\\LA Extensions\\LAScripts_toolbar\\v1.0.7",
+        "C:\\Users\\mustt\\OneDrive\\Dokumen\\LA Extensions\\LAScripts_toolbar\\v1.0.9",
+        "C:\\Users\\mustt\\OneDrive\\Dokumen\\LA Extensions\\LAScripts_toolbar\\v1.1.0",
+        "C:/scripts"
+    ],
+    "openedFolders": [
+        "C:/Users/mustt/OneDrive/Dokumen/LA Extensions/LAScripts",
+        "C:/Users/mustt/OneDrive/Dokumen/LA Extensions/LAScripts/v1.0.5/Align",
+        "C:/Users/mustt/OneDrive/Dokumen/LA Extensions/LAScripts/v1.0.5/Special Effects",
+        "C:/Users/mustt/OneDrive/Dokumen/LA Extensions/LAScripts/v1.0.5/Text",
+        "C:/Users/mustt/OneDrive/Dokumen/LA Extensions/LAScripts/v1.1.0/For Hotkeys and Toolbar",
+        "C:/scripts/illustrator-scripts-master"
+    ],
+    "foldersOnApp": {
+        "indesign": [],
+        "photoshop": [],
+        "illustrator": []
+    },
+    "openedFoldersOnApp": {
+        "indesign": [],
+        "photoshop": [],
+        "illustrator": []
+    },
+    "finder": {
+        "opened": false,
+        "context": {
+            "folder": "",
+            "editor": "",
+            "favorites": ""
+        },
+        "options": {
+            "firstWord": false,
+            "wholeWord": false,
+            "caseSensitive": false
+        }
+    },
+    "fileTypes": [
+        ".ai",
+        ".psd",
+        ".indd",
+        ".zip",
+        ".txt"
+    ],
+    "programs": [],
+    "startup": {
+        "enabled": false,
+        "files": []
+    },
+    "favorites": {
+        "files": []
+    },
+    "libraries": {
+        "files": [],
+        "enabled": [
+            "C:/Program Files/Common Files/Adobe/CEP/extensions/lascript/scripts//AI_PS_Library.js"
+        ]
+    },
+    "console": {
+        "collapse": false,
+        "editor": {
+            "opened": false,
+            "fontSize": 12,
+            "wordWrap": false,
+            "extendScript": false
+        }
+    },
+    "toolbar": {
+        "collapse": false,
+        "offset": {
+            "folder": 0,
+            "editor": 0,
+            "favorites": 0
+        }
+    },
+    "hotKeys": {
+        "enabled": true,
+        "data": [
+            {
+                "command": "ctrl+r",
+                "file": "C:/Users/mustt/OneDrive/Dokumen/LA Extensions/LAScripts/v1.0.8/Reload extension.js"
+            },
+            {
+                "command": "a,d,d",
+                "file": "C:/Users/mustt/OneDrive/Dokumen/LA Extensions/LAScripts/v1.0.8/New document.js"
+            }
+        ]
+    }
+}
